@@ -1,5 +1,5 @@
 
-//https://app.codility.com/c/run/training3VNXEB-NFY
+//https://app.codility.com/programmers/lessons/3-time_complexity/perm_missing_elem/
 class PermMissingElem {
     public int solution(int[] A) {
         // write your code in Java SE 8
