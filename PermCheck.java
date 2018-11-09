@@ -2,14 +2,14 @@
 // Correctness 100%
 // Performance 66%
 // Task Score 83%
-
-class PermCheck {
+class Solution {
     public int solution(int[] A) {
         // write your code in Java SE 8
         int[] B = new int[100000];
         int max = 100000;
+        
         for(int i = 0; i < A.length; i++) {
-            if (A[i] < 100000) {
+            if (A[i] <= 100000) {
                 B[A[i] - 1] ++;
             }
         }
