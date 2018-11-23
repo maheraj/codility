@@ -2,6 +2,59 @@
 
 import java.util.LinkedList;
 public class ZalandoABString {
+    
+    public String bestSolution(int A, int B) {
+        if (A == B && A == 0) {
+            return "";
+        }
+        if (A == B && A == 1) {
+            return "ab";
+        }
+        Queue<Character> result = new LinkedList<>();
+        Queue<Character> bigCharQueue = new LinkedList<>();
+        Queue<Character> tempQueue = new LinkedList<>();
+
+        Character bigChar = A >= B ? 'a' : 'b';
+        Character smallChar = bigChar.equals('a') ? 'b' : 'a';
+
+        int bigSize = A >= B ? A : B;
+        int smallSize = A + B - bigSize;
+
+        for (int i = 0; i < bigSize; i++) {
+            bigCharQueue.add(bigChar);
+        }
+
+        int usedSmallChar = 0;
+        for (int i = 0; i < smallSize; i++) {
+            if (bigCharQueue.size() > 1) {
+                tempQueue.add(bigCharQueue.poll());
+                tempQueue.add(bigCharQueue.poll());
+
+                tempQueue.add(smallChar);
+                usedSmallChar++;
+            } else {
+                break;
+            }
+        }
+
+        tempQueue.addAll(bigCharQueue);
+
+        for (int i = usedSmallChar; i < smallSize; i++) {
+            result.add(tempQueue.poll());
+            result.add(tempQueue.poll());
+            result.add(tempQueue.poll());
+            result.add(smallChar);
+        }
+        result.addAll(tempQueue);
+
+        StringBuilder combination = new StringBuilder();
+        while (!result.isEmpty()) {
+            combination.append(result.poll());
+        }
+
+        return combination.toString();
+    }
+    
     public String solution(int A, int B) {
         StringBuilder sb = new StringBuilder();
         LinkedList<Character> finalComb = new LinkedList<Character>();
