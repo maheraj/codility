@@ -1,3 +1,5 @@
+package com.fosociety.codility;
+
 // https://app.codility.com/demo/results/demoKZXX8Q-6D9/
 
 import java.util.Arrays;

@@ -1,3 +1,5 @@
+package com.fosociety.codility;
+
 // https://app.codility.com/programmers/lessons/5-prefix_sums/count_div/
 // https://app.codility.com/demo/results/trainingET6FAP-CXG/
 class CountDiv {

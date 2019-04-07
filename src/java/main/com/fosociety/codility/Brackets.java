@@ -1,9 +1,24 @@
-//https://app.codility.com/demo/results/trainingENE2DP-QNT/
-// https://app.codility.com/programmers/lessons/7-stacks_and_queues/brackets/
+package com.fosociety.codility;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+import java.util.Stack;
+
+/**
+ *
+ * Problem description: https://app.codility.com/programmers/lessons/7-stacks_and_queues/brackets/
+ * My submission: https://app.codility.com/demo/results/trainingENE2DP-QNT/
+ *
+ */
 class Brackets {
-    public int solution(String S) {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println(solution(scan.nextLine()));
+    }
+
+    public static int solution(String S) {
         // write your code in Java SE 8
         if (S.length() == 0) {
             return 1;
@@ -11,6 +26,7 @@ class Brackets {
         if (S.length() % 2 == 1) {
             return 0;
         }
+
         Map<Character, Character> openingBrackets = new HashMap<>();
         openingBrackets.put('{', '{');
         openingBrackets.put('[', '[');
@@ -18,36 +34,31 @@ class Brackets {
 
 
         Stack<Character> stack = new Stack<>();
-        Character[] characters = new Character[S.length()];
-        for (int i = 0 ; i < S.length(); i++) {
-            characters[i] = S.charAt(i);
-        }
 
-
-        for (int i = 0; i < characters.length; i++) {
+        for (int i = 0; i < S.length(); i++) {
             if (stack.isEmpty()) {
-                stack.push(characters[i]);
+                stack.push(S.charAt(i));
             } else {
-                if (openingBrackets.get(characters[i]) != null) {
-                    stack.push(characters[i]);
+                if (openingBrackets.get(S.charAt(i)) != null) {
+                    stack.push(S.charAt(i));
                 } else {
                     if (stack.isEmpty()) {
                         return 0;
                     }
-                    
+
                     Character peek = stack.pop();
-                    switch (characters[i]) {
-                        case '}' :
+                    switch (S.charAt(i)) {
+                        case '}':
                             if (!peek.equals(openingBrackets.get('{'))) {
                                 return 0;
                             }
                             break;
-                        case ']' :
+                        case ']':
                             if (!peek.equals(openingBrackets.get('['))) {
                                 return 0;
                             }
                             break;
-                        case ')' :
+                        case ')':
                             if (!peek.equals(openingBrackets.get('('))) {
                                 return 0;
                             }

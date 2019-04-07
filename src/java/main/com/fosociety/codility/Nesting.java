@@ -1,3 +1,5 @@
+package com.fosociety.codility;
+
 import java.util.*;
 // https://app.codility.com/demo/results/trainingXCN32J-87X/
 // https://app.codility.com/programmers/lessons/7-stacks_and_queues/nesting/

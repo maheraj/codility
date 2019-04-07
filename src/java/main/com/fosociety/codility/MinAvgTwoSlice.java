@@ -1,3 +1,5 @@
+package com.fosociety.codility;
+
 //https://app.codility.com/programmers/lessons/5-prefix_sums/min_avg_two_slice/
 //https://app.codility.com/demo/results/training2YNMJP-VXQ/
 

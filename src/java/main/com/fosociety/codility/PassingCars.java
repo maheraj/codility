@@ -1,3 +1,5 @@
+package com.fosociety.codility;
+
 // https://app.codility.com/programmers/lessons/5-prefix_sums/passing_cars/
 // https://app.codility.com/demo/results/trainingNR44MW-8NE/
 class PassingCars {

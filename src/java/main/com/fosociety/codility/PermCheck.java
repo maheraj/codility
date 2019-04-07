@@ -1,8 +1,10 @@
+package com.fosociety.codility;
+
 //https://app.codility.com/programmers/lessons/4-counting_elements/perm_check/
 // Correctness 100%
 // Performance 66%
 // Task Score 83%
-class Solution {
+public class PermCheck {
     public int solution(int[] A) {
         // write your code in Java SE 8
         int[] B = new int[100000];

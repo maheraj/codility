@@ -1,3 +1,5 @@
+package com.fosociety.codility;
+
 //https://app.codility.com/programmers/lessons/9-maximum_slice_problem/max_slice_sum/
 //https://app.codility.com/demo/results/training9VQ4E2-KGW/
 

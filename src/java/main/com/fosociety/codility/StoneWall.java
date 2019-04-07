@@ -1,6 +1,9 @@
+package com.fosociety.codility;
 //https://app.codility.com/demo/results/trainingKHG7UP-S2X/
 //https://app.codility.com/programmers/lessons/7-stacks_and_queues/stone_wall/
+
 import java.util.*;
+
 class StoneWall {
     public int solution(int[] H) {
         // write your code in Java SE 8

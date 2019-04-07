@@ -1,3 +1,5 @@
+package com.fosociety.codility;
+
 // https://app.codility.com/programmers/lessons/6-sorting/max_product_of_three/
 // https://app.codility.com/demo/results/training3RMZ7B-48P/
 import java.util.Arrays;

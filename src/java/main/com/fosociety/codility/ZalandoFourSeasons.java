@@ -1,3 +1,5 @@
+package com.fosociety.codility;
+
 //https://app.codility.com/c/feedback/ZYUMAG-HE4
 import java.util.Arrays;
 

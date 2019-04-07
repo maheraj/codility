@@ -1,3 +1,5 @@
+package com.fosociety.codility;
+
 //https://app.codility.com/programmers/lessons/2-arrays/cyclic_rotation/
 class CyclicRotation { 
 	public int[] solution(int[] A, int K) {

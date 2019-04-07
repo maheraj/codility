@@ -1,3 +1,5 @@
+package com.fosociety.codility;
+
 //https://app.codility.com/programmers/lessons/8-leader/equi_leader/
 //https://app.codility.com/demo/results/trainingKTYC63-2NC/
 import java.util.*;

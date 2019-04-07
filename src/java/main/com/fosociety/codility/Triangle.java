@@ -1,3 +1,5 @@
+package com.fosociety.codility;
+
 // https://app.codility.com/programmers/lessons/6-sorting/triangle/
 // https://app.codility.com/demo/results/trainingQ4XREV-JB9/
 

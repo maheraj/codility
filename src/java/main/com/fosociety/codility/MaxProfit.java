@@ -1,3 +1,5 @@
+package com.fosociety.codility;
+
 //https://app.codility.com/programmers/lessons/9-maximum_slice_problem/max_profit/
 //https://app.codility.com/demo/results/training8MS4T4-9SF/
 

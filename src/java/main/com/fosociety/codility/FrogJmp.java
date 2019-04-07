@@ -1,3 +1,5 @@
+package com.fosociety.codility;
+
 //https://app.codility.com/programmers/lessons/3-time_complexity/frog_jmp/
 class FrogJmp {
     public int solution(int X, int Y, int D) {

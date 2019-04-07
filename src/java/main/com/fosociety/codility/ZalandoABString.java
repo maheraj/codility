@@ -1,6 +1,10 @@
+package com.fosociety.codility;
+
 // https://app.codility.com/c/feedback/ZYUMAG-HE4
 
 import java.util.LinkedList;
+import java.util.Queue;
+
 public class ZalandoABString {
     
     public String bestSolution(int A, int B) {

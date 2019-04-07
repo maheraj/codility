@@ -1,3 +1,5 @@
+package com.fosociety.codility;
+
 // https://app.codility.com/programmers/lessons/6-sorting/distinct/
 // https://app.codility.com/demo/results/trainingAP66W2-MYS/
 

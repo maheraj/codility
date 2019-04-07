@@ -1,3 +1,5 @@
+package com.fosociety.codility;
+
 // https://app.codility.com/programmers/lessons/8-leader/dominator/
 // https://app.codility.com/demo/results/trainingAWTJCC-63R/
 

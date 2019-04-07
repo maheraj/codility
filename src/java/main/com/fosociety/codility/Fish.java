@@ -1,7 +1,9 @@
+package com.fosociety.codility;
+
 //https://app.codility.com/programmers/lessons/7-stacks_and_queues/fish/
 //https://app.codility.com/demo/results/training9MKZ2J-FPN/
 import java.util.*;
-class Solution {
+class Fish {
     public int solution(int[] A, int[] B) {
         // write your code in Java SE 8
         Stack<Integer> result = new Stack<>();
