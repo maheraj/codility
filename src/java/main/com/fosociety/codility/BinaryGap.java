@@ -12,6 +12,21 @@ class BinaryGap {
         System.out.println(solution(scan.nextInt()));
     }
 
+    //solution using stream java 8
+    public int solution(int N) {
+        // write your code in Java SE 8
+        return Stream.of(
+            Integer.toBinaryString(N)
+            .replaceAll("0+$", "")
+            .split("1+")
+            )
+            .filter(a -> a != null)
+            .map(String::length)
+            .max(Integer::compare)
+            .orElse(0);
+    }
+    
+    //solution 2 - java 7
     public static int solution(int n) {
         String result = Integer.toBinaryString(n);
         int max = 0;
